@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browsecure | Project Details</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>Browsecure</h1>
+    <p>Browser Security Extension</p>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="container">
+
+    <h2>1. Project Overview</h2>
+    <p>
+      <strong>Browsecure</strong> is a browser extension developed to help users
+      identify whether a website is safe or potentially dangerous before or
+      during browsing. The extension analyzes the URL of the currently opened
+      website and checks it against trusted security databases to detect threats
+      such as malware, phishing, and unwanted software.
+    </p>
+    <p>
+      The primary objective of Browsecure is to enhance browsing security by
+      providing real-time threat awareness in a simple and user-friendly manner.
+    </p>
+
+    <h2>2. Objective of the Project</h2>
+    <ul>
+      <li>To identify malicious or suspicious websites in real time</li>
+      <li>To warn users about unsafe websites</li>
+      <li>To improve user awareness regarding web-based threats</li>
+      <li>To provide a lightweight and fast security-checking mechanism</li>
+    </ul>
+
+    <h2>3. System Description</h2>
+    <p>
+      Browsecure works as an on-demand scanning tool that evaluates the safety
+      of a website whenever the user interacts with the extension.
+    </p>
+    <p>
+      The extension retrieves the URL of the active browser tab and sends it
+      to a background service, which then checks the website against known
+      threat indicators. Based on the scan result, the extension displays
+      whether the website is safe or dangerous.
+    </p>
+
+    <h2>4. Technologies Used</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Chrome Extension APIs</li>
+      <li>Google Safe Browsing API</li>
+    </ul>
+
+    <h2>5. Architecture Overview</h2>
+
+    <h3>Frontend</h3>
+    <ul>
+      <li>Popup interface developed using HTML and CSS</li>
+      <li>Displays website URL and scan result</li>
+    </ul>
+
+    <h3>Background Service</h3>
+    <ul>
+      <li>Handles communication with the threat detection API</li>
+      <li>Performs URL analysis and returns results</li>
+    </ul>
+
+    <h3>Threat Detection Engine</h3>
+    <ul>
+      <li>Uses Google Safe Browsing API</li>
+      <li>Identifies known malicious URLs and security threats</li>
+    </ul>
+
+    <h2>6. Current Status of the Project</h2>
+    <ul>
+      <li>Browser extension successfully implemented</li>
+      <li>Popup interface functional</li>
+      <li>Active tab URL detection working</li>
+      <li>Real-time website scanning enabled</li>
+      <li>Safe and dangerous websites correctly identified</li>
+      <li>Extension tested using standard threat simulation URLs</li>
+    </ul>
+
+    <h2>7. Future Scope</h2>
+    <ul>
+      <li>Pre-access website scanning before page load</li>
+      <li>Detailed privacy and data-collection analysis</li>
+      <li>Integration with additional threat intelligence APIs</li>
+      <li>Dashboard for scan history and statistics</li>
+      <li>AI-based risk detection mechanisms</li>
+    </ul>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Mohith Raj A K</p>
+  </footer>
+
+</body>
+</html>
